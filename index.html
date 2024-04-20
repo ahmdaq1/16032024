@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .section1-1 {
+      margin-left: 290px;
+    }
+
+    .section1-2 {
+      margin-left: 90px;
+    }
+
+    .ilustration-1 {
+      height: 400px;
+    }
+
+    .ilustration-3 {
+      height: 250px;
+    }
+
+    .section-bg-custom {
+      background-color: #e4efff;
+    }
+
+    .nav-tabs {
+      --bs-nav-tabs-border-color: #fff;
+      --bs-nav-tabs-link-active-border-color: #fff #fff #000;
+    }
+
+    .html {
+      scroll-behavior: smooth;
+    }
+
+    .link-tab-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 1.688rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .link-tab-desc {
+      font-size: 1rem;
+      letter-spacing: .005em;
+      line-height: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .icon-quote {
+      font-size: 6em;
+      color: #4f96ff;
+      margin-left: -16px;
+    }
+
+    .quote {
+      margin-top: -20px;
+      margin-right: 100px;
+      color: #717b8a;
+      font-size: 1.75rem;
+      letter-spacing: .02em;
+      line-height: 2.875rem;
+    }
+
+    .picture-tab-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .02cm;
+      line-height: 1.688rem;
+      color: #686868;
+    }
+
+    .picture-tab-desc {
+      font-size: 1rem;
+      letter-spacing: .005em;
+      line-height: 1.5rem;
+      color: #686868;
+    }
+
+    .social-icon {
+      font-size: 30px;
+    }
+
+    .social-icon:hover {
+      color: #ffffff !important;
+    }
+
+    .menu-footer {
+      display: block;
+      text-decoration: none;
+      color: rgba(255, 193, 7, 0.70);
+    }
+
+    .menu-footer:hover {
+      color: rgba(255, 193, 7, 1) !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .section1-1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+      }
+
+      .section1-2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .section5-1 {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .ilustration-1 {
+        height: 300px;
+      }
+
+      .ilustration-2 {
+        width: 240px;
+        margin-bottom: 20px;
+      }
+
+      .ilustration-3 {
+        height: 200px;
+        margin-bottom: 20px;
+      }
+
+      #footer-copyright {
+        text-align: center;
+      }
+
+      #footer-powered {
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container-fluid p-0">
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="" target="_blank">
+          <img src="images/Logo.png" alt="logo pesat" width="40px" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profil Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contoh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Harga</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Lainnya
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Produk</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Kontak Saya</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Beli</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid" style="margin-top: 67.6px;">
+    <section class="row bg-primary text-white py-5">
+      <div class="col-sm-6 col-sm-6 order-md-last">
+        <div class="section1-2">
+          <div data-aos="fade-left" data-aos-duration="1500"><img src="images/ilustrations/website_work.svg" alt="ilustration-1" class="ilustration-1"
+            style="width: 450px;"></div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="section1-1">
+          <h1 class="mb-4">Butuh seseorang untuk membuat website?</h1>
+          <p>Dapatkan website impian anda dengan jasa saya. Memiliki seseorang yang menguasai seni dan ilmu membuat
+            website tidak hanya memastikan tampilan yang mencolok, tetapi juga pengalaman pengguna yang optimal. Dari
+            desain yang modern hingga pengalaman pengguna yang mulus, tim kami akan membantu merealisasikan visi anda
+            dengan presisi dan profesionalisme.</p>
+          <button class="btn btn-lg btn-warning mt-4">Produk</button>
+        </div>
+      </div>
+    </section>
+    <section class="row py-5">
+      <div class="col text-center">
+        <strong>Butuh sesuatu?</strong>
+        <h1>Kirim Pesan.</h1>
+        <div class="lead mb-4">(Waktu balasan tidak ditentukan)</div>
+        <div class="row justify-content-center">
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm9 mb-3">
+                <input type="text" class="form-control" placeholder="Kirim Pesan">
+              </div>
+              <div class="col-sm-3 mb-3">
+                <button class="btn btn-warning">Kirim</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>
+          Tidak ingin?
+          <small class="text-muted">Lanjut cek website.</small>
+        </h4>
+      </div>
+    </section>
+    <section class="row section-bg-custom py-5">
+      <div class="col text-center">
+        <h1>List Produk</h1>
+        <div class="row justify-content-center">
+          <div class="col-sm-5">
+            <p class="lead">
+              <small>Berikut adalah pilihan produk yang saya berikan.</small>
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Lite</h5>
+                <small class="text-muted">Termurah. Simple. Minimalistic.</small>
+                <div class="my-4">
+                  <div class="badge bg-success">350.000</div>
+                </div>
+                <h4>
+                  <div class="text-warning" style="display: inline;">Minimalistic</div> website.
+                </h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning" href="#">Contoh</button>
+                </div>
+                <div class="text-muted">Kelebihan</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                    </div>
+                    <div class="p-2">Harga Murah</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Harga yang murah dan terjangkau">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">File HTML</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Hanya mendapatkan zip website">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-x-circle-fill" style="color: #e20000;"></i>
+                    </div>
+                    <div class="p-2">Modern</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Desain yang kurang modern">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Pesan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Reguler</h5>
+                <small class="text-muted">Website modern dan simple.</small>
+                <div class="my-4">
+                  <div class="badge bg-success">750.000</div>
+                </div>
+                <h4>
+                  <div class="text-warning" style="display: inline;">Clean</div> website.
+                </h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning">Contoh</button>
+                </div>
+                <div class="text-muted">Kelebihan</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Desain Modern</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Desain yang lebih modern">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Harga Terjangkau</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Harga yang terjangkau pada kelasnya">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                    </div>
+                    <div class="p-2">File HTML</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Hanya mendapatkan zip website">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Pesan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card border-warning">
+              <div class="card-header"><b>TERLARIS</b></div>
+              <div class="card-body" style="text-align: left;">
+                <h5>Reguler+</h5>
+                <small class="text-muted">Personal website yang modern.</small>
+                <div class="my-4">
+                  <div class="badge bg-success">1.500.000</div>
+                </div>
+                <h4>
+                  <div class="text-warning" style="display: inline;">Modern</div> website.
+                </h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning">Contoh</button>
+                </div>
+                <div class="text-muted">Kelebihan</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Desain lebih bagus</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Desain website yang lebih modern">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Kustomisasi</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Isi website akan sepenuhnya dibuat dan dikostumisasi sesuai dengan permintaan">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                    </div>
+                    <div class="p-2">File HTML</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Hanya mendapatkan zip website">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Pesan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Premium</h5>
+                <small class="text-muted">Premium. Company-style website.</small>
+                <div class="my-4">
+                  <div class="badge bg-success">15.000.000</div>
+                </div>
+                <h4>
+                  <div class="text-warning" style="display: inline;">State-of-the-art</div> website.
+                </h4>
+                <div class="text-center my-4">
+                  <button class="btn btn-outline-warning">Contoh</button>
+                </div>
+                <div class="text-muted">Kelebihan</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Desain premium</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Desain premium seperti website perusahaan besar">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Better user experience</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Pengalaman pengguna akan dibaguskan">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Domain</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                      data-bs-content="Mendapatkan domain untuk website">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row section-bg-custom justify-content-center py-5">
+      <div class="col-sm-8">
+        <div class="card bg-primary text-light">
+          <div class="card-body">
+            <div class="row p-4">
+              <div class="col-sm-6 order-md-last text-center">
+                <img src="images/ilustrations/coder-illustration.svg" alt="ilustration-2" class="ilustration-2">
+              </div>
+              <div class="col-sm-6">
+                <div data-aos="zoom-in" data-aos-duration="1500"><strong>Kenalin.</strong>
+                <h1 class="mb-4">Ahmad Aqila Rozan</h1>
+                <p>Saya memiliki keterampilan membuat website sejak umur 14 tahun,
+                  saya belajar pembuatan website melewati program 'Student Day' yang diterapkan di sekolah SMA Plus
+                  PGRI Cibinong,
+                  dan saya sudah memiliki pengalaman dalam membuat website untuk banyak perusahaan.</p>
+                <button class="btn btn-lg btn-warning mt-4">Testimoni</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row section-bg-custom justify-content-center py-5">
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <div data-aos="fade-right" data-aos-duration="1500"><img src="images/simple.jpg" alt="ilustration-3" class="ilustration-3"></div>
+          </div>
+          <div class="col-sm-6 section5-1">
+            <div data-aos="zoom-in" data-aos-duration="1500"><h5 class="text-muted"><i>Impact</i></h5>
+            <h1>Lite.</h1>
+            <p>Lite adalah solusi website yang simpel dan efisien, dirancang untuk memberikan pengalaman browsing yang
+              cepat. Dengan antarmuka yang bersih dan navigasi yang intuitif, Lite cocok untuk blog pribadi atau situs
+              bisnis kecil yang ingin tampil ringan tanpa mengorbankan kualitas.</p></div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-sm-6 text-center order-md-last">
+            <div data-aos="fade-left" data-aos-duration="1500"><img src="images/reguler.jpg" alt="ilustration-4" class="ilustration-3"></div>
+          </div>
+          <div class="col-sm-6 section5-1">
+            <div data-aos="zoom-in" data-aos-duration="1500"><h5 class="text-muted"><i>Yummy.</i></h5>
+            <h1>Reguler</h1>
+            <p>Reguler adalah solusi website serbaguna yang menyediakan fitur lengkap untuk membangun situs web
+              profesional. Dengan desain responsif, pengelolaan konten yang mudah, dan integrasi media sosial, Reguler
+              cocok untuk bisnis kecil hingga perusahaan besar.</p></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <div data-aos="fade-right" data-aos-duration="1500"><img src="images/reguler+.jpg" alt="ilustration-5" class="ilustration-3"></div>
+          </div>
+          <div class="col-sm-6 section5-1">
+            <div data-aos="zoom-in" data-aos-duration="1500"><h5 class="text-muted"><i>Logis</i></h5>
+          <h1>Reguler+</h1>
+            <p>Reguler+ adalah solusi website yang ditingkatkan, menawarkan fitur-fitur canggih seperti integrasi
+              e-commerce, alat analisis, dan opsi kustomisasi yang luas. Cocok untuk bisnis online yang ingin memperluas
+              jangkauan dan meningkatkan kinerja mereka secara efektif.</p></div>
+          </div>
+          <div class="row my-5">
+            <div class="col-sm-6 text-center order-md-last">
+              <div data-aos="fade-left" data-aos-duration="1500"> <img src="images/premium.png" alt="ilustration-4" class="ilustration-3"></div>
+            </div>
+            <div class="col-sm-6 section5-1">
+              <div data-aos="zoom-in" data-aos-duration="1500"><h5 class="text-muted"><i>Boldly Go.</i></h5>
+              <h1>Premium</h1>
+              <p>Premium adalah pilihan utama untuk situs web yang istimewa dan terdepan. Dengan desain eksklusif,
+                fitur-fitur canggih, dan dukungan pelanggan yang superior, Premium memastikan keunggulan online yang tak
+                tertandingi untuk meningkatkan pertumbuhan bisnis Anda dengan lebih banyak lagi.</p></div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="row justify-content-center py-5">
+      <div class="col-sm-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <div class="row">
+              <div class="col-sm-8">
+                <i class="bi bi-quote icon-quote"></i>
+                <div class="quote mb-5">
+                  "Saya sangat senang dengan hasil yang diberikan oleh Ahmad. Dengan kreativitas dan
+                  profesionalismenya, Ahmad berhasil menciptakan situs web yang mengagumkan dan
+                  memenuhi semua kebutuhan saya. Sangat direkomendasikan!"
+                </div>
+                <button class="btn btn-lg btn-warning text-primary">Pesan</button>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/ilustrations/man-1.png" alt="" class="img-fluid">
+                <p class="picture-tab-title text-center mt-3 mb-1">Rizky Aditya Saputra</p>
+                <p class="picture-tab-desc text-center">Pekerja PT. Sukajaya</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="row">
+              <div class="col-sm-8">
+                <i class="bi bi-quote icon-quote"></i>
+                <div class="quote mb-5">
+                  "Terima kasih kepada Ahmad atas situs web yang luar biasa! Prosesnya cepat, mudah, dan hasilnya
+                  sempurna. Saya sangat puas!"
+                </div>
+                <button class="btn btn-lg btn-warning text-primary">Pesan</button>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/ilustrations/orang.png" alt="" class="img-fluid">
+                <p class="picture-tab-title text-center mt-3 mb-1">Timothy Ronald</p>
+                <p class="picture-tab-desc text-center">Penipu Terkenal</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <div class="row">
+              <div class="col-sm-8">
+                <i class="bi bi-quote icon-quote"></i>
+                <div class="quote mb-5">
+                  "Absolutely thrilled with the website crafted by Ahmad! The process was seamless, and the attention to
+                  detail was exceptional. Couldn't be happier with the outcome. Highly recommend!"
+                </div>
+                <button class="btn btn-lg btn-warning text-primary">Pesan</button>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/ilustrations/man-2.jpg" alt="" class="img-fluid">
+                <p class="picture-tab-title text-center mt-3 mb-1">Harold Adams</p>
+                <p class="picture-tab-desc text-center">Businessman</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="mt-5">
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+              <p class="link-tab-title">Testimoni</p>
+              <p class="link-tab-desc">Nomor 1</p>
+            </button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+              <p class="link-tab-title">Testimoni</p>
+              <p class="link-tab-desc">Nomor 2</p>
+            </button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+              type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+              <p class="link-tab-title">Testimoni</p>
+              <p class="link-tab-desc">Nomor 3</p>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="row section-bg-custom justify-content-center py-5">
+      <div class="col-sm-8">
+        <h1 class="mb-5 text-center">Frequently asked questions</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Apakah saya bisa melihat contoh situs web yang pernah dibuat sebelumnya?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Tentu saja.</strong> Saya memiliki portofolio yang mencakup berbagai situs web yang saya pernah
+                buat
+                sebelumnya. Anda dapat melihatnya untuk mendapatkan gambaran tentang kualitas dan gaya desain yang saya
+                tawarkan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Berapa lama waktu yang dibutuhkan untuk membuat websitenya?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Waktu pembuatan situs web bisa bervariasi
+                  tergantung pada kompleksitas proyek, </strong> tetapi saya berusaha untuk menyelesaikan
+                proyek dalam waktu efisien tanpa mengorbankan kualitas. Setelah mengetahui detail proyek anda,
+                saya akan memberikan perkiraan waktu yang dibutuhkan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Apakah anda menyediakan layanan pemeliharaan situs web setelah pembuatan selesai?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Ya. Tetapi <strong>hanya untuk produk Reguler+ dan Premium.</strong> Saya menyediakan layanan
+                pemeliharaan
+                situs web setelah pembuatan selesai. Ini bisa termasuk pembaruan rutin, perbaikan bug, dan dukungan
+                teknis lainnya agar situs web tetap berjalan lancar.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                Bagaimana saya bisa berkomunikasi dengan anda selama proses pembuatan situs web?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Saya mempunyai berbagai kontak</strong> yang bisa digunakan untuk berkomunikasi dengan saya,
+                detail kontak saya terletak dalam bawah website ini.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid py-2 bg-black text-warning">
+    <div class="row justify-content-center my-5">
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-sm-3 mb-5">
+            <div class="mb-4 text-center">
+              <img src="images/Logo.png" alt="Logo Pesat" width="40px" class="d-inline-block">
+            </div>
+            <p class="mb-3">Seorang pembuat website yang berbakat dan berpengalaman, Ahmad menghadirkan solusi kreatif
+              dan fungsional untuk setiap proyek.</p>
+            <p class="mb-3"> Dengan keahlian dalam desain web, pengkodean, dan pengalaman pengguna,
+              saya mampu mengubah visi klien menjadi kenyataan yang menarik dan efektif.</p>
+            <p class="mb-1">Email: <a href="mailto:ahmadaqilarozan@gmail.com">ahmadaqilarozan@gmail.com</a></p>
+            <p class="mb-3">Whatsapp: <a href="https://wa.me/+6283818998965" target="_blank">083818998965</a></p>
+            <div class="d-flex flex-row mb-2">
+              <a href="https://www.facebook.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com" class="text-warning social-icon mx-4" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://id.linkedin.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+            <div class="d-flex flex-row">
+              <a href="https://x.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.tiktok.com" class="text-warning social-icon mx-4" target="_blank">
+                <i class="bi bi-tiktok"></i>
+              </a>
+              <a href="https://www.youtube.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr style="border-width: 5px;">
+        <div class="row justify-content-betweeen">
+          <div class="col-sm-6">Copyright &copy;2024</div>
+          <div class="col-sm-6 text-end">Powered by Studentday Web Design</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
